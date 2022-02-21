@@ -1,54 +1,196 @@
 ﻿@*@page "/"
 
-<PageTitle>Index</PageTitle>
+	<PageTitle>Index</PageTitle>
 
-<h1>Hello, world!</h1>
+	<h1>Hello, world!</h1>
 
-Welcome to your new app.
+	Welcome to your new app.
 
-<SurveyPrompt Title="How is Blazor working for you?" />*@
+	<SurveyPrompt Title="How is Blazor working for you?" />*@
 
 
 @page "/"
 
 <PageTitle>Index</PageTitle>
 
-<h1>Upcoming Matches</h1>
+<div class="container" style="background-color:#F7F7F7">
+<h1>My Upcoming Matches</h1>
 <br />
 <p>These are the upcoming matches from the sports you subscribed</p>
 <br />
 
-<table class="table table-striped" style="text-align: center;">
-    <thead>
-        <tr>
-            <th>Sport</th>
-            <th>Date</th>
-            <th>From</th>
-            <th>To</th>
-            <th>Attendance</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Volleyball</td>
-            <td>10/Feb/2022</td>
-            <td>19:00</td>
-            <td>21:00</td>
-            <td><span style="color:#009900" class="oi oi-circle-check"></span></td>
-        </tr>        
-        <tr>
-            <td>Basketball</td>
-            <td>11/Feb/2022</td>
-            <td>18:00</td>
-            <td>20:00</td>
-            <td><span style="color:#ff0000" class="oi oi-circle-x"></span></td>
-        </tr>
-        <tr>
-            <td>Football</td>
-            <td>15/Feb/2022</td>
-            <td>16:30</td>
-            <td>18:00</td>
-            <td><span style="color:#009900" class="oi oi-circle-check"></span></td>
-        </tr>
-    </tbody>
+<table class="table" style="background: white;text-align: center;border-radius: 15px;box-shadow: 5px 5px 5px #f0f0f0;">
+	<thead>
+		<tr>
+			<th>Sport</th>
+			<th>Date</th>
+			<th>From</th>
+			<th>To</th>
+			<th>Attendance</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Volleyball</td>
+			<td>10/Feb/2022</td>
+			<td>19:00</td>
+			<td>21:00</td>
+			<td><span class="badge bg-success">Going</span></td>
+		</tr>
+		<tr>
+			<td>Basketball</td>
+			<td>11/Feb/2022</td>
+			<td>18:00</td>
+			<td>20:00</td>
+			<td><span class="badge bg-danger">Not Going</span></td>
+		</tr>
+		<tr>
+			<td>Football</td>
+			<td>15/Feb/2022</td>
+			<td>16:30</td>
+			<td>18:00</td>
+			<td><span class="badge bg-success">Going</span></td>
+		</tr>
+	</tbody>
 </table>
+
+
+
+<h1>Browse all sports</h1>
+@*
+	<table class="table table-striped" style="text-align: center;">
+	<thead>
+	<tr>
+	<th>Sport</th>
+	<th>Date</th>
+	<th>From</th>
+	<th>To</th>
+	<th>Attendance</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+	<td>Volleyball</td>
+	<td>10/Feb/2022</td>
+	<td>19:00</td>
+	<td>21:00</td>
+	<td><span style="color:#009900" class="oi oi-circle-check"></span></td>
+	</tr>
+	<tr>
+	<td>Basketball</td>
+	<td>11/Feb/2022</td>
+	<td>18:00</td>
+	<td>20:00</td>
+	<td><span style="color:#ff0000" class="oi oi-circle-x"></span></td>
+	</tr>
+	<tr>
+	<td>Football</td>
+	<td>15/Feb/2022</td>
+	<td>16:30</td>
+	<td>18:00</td>
+	<td><span style="color:#009900" class="oi oi-circle-check"></span></td>
+	</tr>
+	</tbody>
+	</table>*@
+
+
+
+@*<div class="container-fluid">
+	<div class="row">
+	<div class="col-3" style="border-radius:15px;background-color:#f4f4f4;padding:20px;">
+	<p class="sport-name">Volleyball</p>
+	<p><span class="oi oi-map-marker"></span> Av. 24 de Julho 30, 1200-225 Lisboa</p>
+	<p><span class="oi oi-calendar"></span>  13/Feb/2022, 18:00</p>
+	<p><span class="oi oi-clock"></span> 2 hours</p>
+	</div>
+	</div>
+	</div>*@
+
+
+@*<div class="container-fluid">
+	<div class="col-3" style="border-radius:15px;background-color:#f4f4f4;padding:20px;">
+	<div class="row">
+	<img src="/img/volley.jpg" />
+	</div>
+	<div class="row">
+	<p class="sport-name">Volleyball</p>
+	<p><span class="oi oi-map-marker"></span> Av. 24 de Julho 30, 1200-225 Lisboa</p>
+	<p><span class="oi oi-calendar"></span>  13/Feb/2022, 18:00</p>
+	<p><span class="oi oi-clock"></span> 2 hours</p>
+	</div>
+	</div>
+	</div>
+*@
+
+
+
+@*border-radius:15px;/* background-color:#f4f4f4; */padding:20px;background-image: url("img/volley.jpg");background-size: cover;filter: grayscale(50%);*@
+
+
+
+@*			<div class="card col-2" style="border-radius:15px;box-shadow: 5px 5px 5px #f0f0f0; margin:5px;padding:0;overflow:hidden;">
+			<img class="card-img-top" src="/img/volley.jpg" alt="Card image cap" style="overflow:hidden; padding:0;">
+			<div class="card-body">
+				<h5 class="card-title" style="font-size: 32px;font-weight: bold;">Volleyball <span class="oi oi-star" style="color:#ffc107;font-size:28px"></span></h5>
+				<h5 class="card-title" style="font-weight: bold;">Volleyball <span class="oi oi-star" style="color:#ffc107"></span></h5>
+				<p><span class="oi oi-map-marker"></span> Av. 24 de Julho 30, 1200-225 Lisboa</p>
+				<p><span class="oi oi-calendar"></span> Wednesdays, 18:00</p>
+				<p><span class="oi oi-clock"></span> 2 hours</p>
+				<p><span class="oi oi-flag" /> 13/Feb/2022, 18:00</p>
+				<a href="#" class="btn btn-primary">Go somewhere</a>
+			</div>
+		</div>*@
+
+
+
+<div class="container">
+	<div class="row">
+
+			<div class="card col-2" style="border-radius:15px;box-shadow: 5px 5px 5px #f0f0f0; margin:5px;padding:0;overflow:hidden;">
+			<img class="card-img-top" src="/img/volley.jpg" alt="Card image cap" style="overflow:hidden; padding:0;">
+			<div class="card-body">
+				<h5 class="card-title" style="font-weight: bold;">Volleyball <span class="oi oi-star" style="color:#ffc107"></span></h5>
+				<p><span class="oi oi-calendar"></span> Wednesdays, 18:00</p>
+				<p><span class="oi oi-clock"></span> 2 hours</p>
+				<p><span class="oi oi-flag" /> 13/Feb/2022, 18:00</p>
+			</div>
+		</div>
+
+		<div class="card col-2" style="border-radius:15px;box-shadow: 5px 5px 5px #f0f0f0; margin:5px;padding:0;overflow:hidden;">
+			<img class="card-img-top" src="/img/football.jpg" alt="Card image cap" style="overflow:hidden; padding:0;">
+			<div class="card-body">
+				<h5 class="card-title" style="font-weight: bold;">Football <span class="oi oi-star" style="color:#ffc107"></span></h5>
+				<p><span class="oi oi-calendar"></span> Wednesdays, 18:00</p>
+				<p><span class="oi oi-clock"></span> 2 hours</p>
+				<p><span class="oi oi-flag" /> 13/Feb/2022, 18:00</p>
+			</div>
+		</div>
+
+
+		<div class="card col-2" style="border-radius:15px;box-shadow: 5px 5px 5px #f0f0f0; margin:5px;padding:0;overflow:hidden;">
+			<img class="card-img-top" src="/img/run.jpg" alt="Card image cap" style="overflow:hidden; padding:0;">
+			<div class="card-body">
+				<h5 class="card-title" style="font-weight: bold;">Running <span class="oi oi-star" style="color:#ffc107"></span></h5>
+				<p><span class="oi oi-calendar"></span> Wednesdays, 18:00</p>
+				<p><span class="oi oi-clock"></span> 2 hours</p>
+				<p><span class="oi oi-flag" /> 13/Feb/2022, 18:00</p>
+			</div>
+		</div>
+
+
+		<div class="card col-2" style="border-radius:15px;box-shadow: 5px 5px 5px #f0f0f0; margin:5px;padding:0;overflow:hidden;">
+			<img class="card-img-top" src="/img/basket.jpg" alt="Card image cap" style="overflow:hidden; padding:0;">
+			<div class="card-body">
+				<h5 class="card-title" style="font-weight: bold;">Basketball <span class="oi oi-star" style="color:#ffc107"></span></h5>
+				<p><span class="oi oi-calendar"></span> Wednesdays, 18:00</p>
+				<p><span class="oi oi-clock"></span> 2 hours</p>
+				<p><span class="oi oi-flag" /> 13/Feb/2022, 18:00</p>
+			</div>
+		</div>
+
+
+	</div>
+</div>
+</div>
+
+
