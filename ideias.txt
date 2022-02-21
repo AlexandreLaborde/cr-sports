@@ -1,0 +1,26 @@
+behavior
+users subscribe to sports
+sports have matches
+service automatically create next matches based on rules
+service send automatic email to confirm attendance to match
+service send automatic email to confirm match, players and rides
+managers can edit/delete upcoming matches
+managers can edit/delete users
+
+
+pages
+- login
+    signing using google oauth
+- home
+    list upcoming matches for sports user subscribed
+- sport A
+    show sport details... default match time, schedule, field location, avg price
+    list all players that have subscribed to sport
+    show details for next match ( date)
+    list players that have confirmed attendance to match
+    show match history?
+- sport B
+    ...
+- user management [manager/admin only]
+  change details of users
+  delete accounts

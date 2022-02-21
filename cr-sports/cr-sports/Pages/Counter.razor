@@ -1,4 +1,4 @@
-﻿@page "/counter"
+﻿@*@page "/counter"
 
 <PageTitle>Counter</PageTitle>
 
@@ -15,4 +15,108 @@
     {
         currentCount++;
     }
-}
+}*@
+
+
+@page "/volleyball"
+
+<PageTitle>Volleyball</PageTitle>
+
+
+
+
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-6" style="border-radius:15px;background-color:#f4f4f4;padding:20px;">
+			<h1>Next Match</h1>
+			<p><span class="oi oi-map-marker"></span> Av. 24 de Julho 30, 1200-225 Lisboa</p>
+			<p><span class="oi oi-calendar"></span>  13/Feb/2022, 18:00</p>
+			<p><span class="oi oi-clock"></span> 2 hours</p>
+			<p><span class="oi oi-people"></span> 10</p>
+			<p><b>💶</b> 5 </p>
+		</div>
+		<div class="col-6">
+			<h1>Details</h1>
+			@*<p><b>Location:</b> Av. 24 de Julho 30, 1200-225 Lisboa</p>
+				<p><b>Regular schedule:</b> Every Wedenesay, 18:00</p>
+				<p><b>Match duration:</b> 2 hours</p>
+				<p><b>Minimum Number of players:</b> 8</p>*@
+			<p><span class="oi oi-map-marker"></span> Av. 24 de Julho 30, 1200-225 Lisboa</p>
+			<p><span class="oi oi-calendar"></span> Wednesdays, 18:00</p>
+			<p><span class="oi oi-clock"></span> 2 hours</p>
+			<p><span class="oi oi-people"></span> 8</p>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="container-fluid">
+    <div class="row">
+		<div class="col-6">
+			<table class="table table-striped">
+				<thead>
+					<tr>
+						<th><h3>Playing next match</h3></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr><td><img src="img/default.png" width="30" height="30" /> Devin Lloyd</td></tr>
+					<tr><td><img src="img/default.png" width="30" height="30" /> Dorian Rogers Machado</td></tr>
+					<tr><td><img src="img/default.png" width="30" height="30" /> Holly Arias</td></tr>
+					<tr><td><img src="img/default.png" width="30" height="30" /> Charlize Soto</td></tr>
+					<tr><td><img src="img/default.png" width="30" height="30" /> Hillary Haney</td></tr>
+					<tr><td><img src="img/default.png" width="30" height="30" /> Nevaeh Vaughn</td></tr>
+					<tr><td><img src="img/default.png" width="30" height="30" /> Kaitlyn Hull</td></tr>
+					<tr><td><img src="img/default.png" width="30" height="30" /> Theodore Barron</td></tr>
+					<tr><td><img src="img/default.png" width="30" height="30" /> Allen Nelson</td></tr>
+					<tr><td><img src="img/default.png" width="30" height="30" /> Jenna Beck</td></tr>
+					<tr><td><img src="img/default.png" width="30" height="30" /> Tristen Taylor</td></tr>
+					<tr><td><img src="img/default.png" width="30" height="30" /> Malia Ferrell</td></tr>
+				</tbody>
+			</table>
+		</div>
+        <div class="col-6">
+            <table class="table table-striped">
+		<thead>
+			<tr>
+				<th><h3>Subscribed Players</h3></th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr><td><img src="img/default.png" width="30" height="30" /> Devin Lloyd</td></tr>
+			<tr><td><img src="img/default.png" width="30" height="30" /> Amira Bernard</td></tr>
+			<tr><td><img src="img/default.png" width="30" height="30" /> Dorian Rogers Machado</td></tr>
+			<tr><td><img src="img/default.png" width="30" height="30" /> Cornelius Savage</td></tr>
+			<tr><td><img src="img/default.png" width="30" height="30" /> Holly Arias</td></tr>
+			<tr><td><img src="img/default.png" width="30" height="30" /> Rayne Miller</td></tr>
+			<tr><td><img src="img/default.png" width="30" height="30" /> Charlize Soto</td></tr>
+			<tr><td><img src="img/default.png" width="30" height="30" /> Mylee King</td></tr>
+			<tr><td><img src="img/default.png" width="30" height="30" /> Heidi Patton</td></tr>
+			<tr><td><img src="img/default.png" width="30" height="30" /> Hillary Haney</td></tr>
+			<tr><td><img src="img/default.png" width="30" height="30" /> Nevaeh Vaughn</td></tr>
+			<tr><td><img src="img/default.png" width="30" height="30" /> Johnathon Munoz</td></tr>
+			<tr><td><img src="img/default.png" width="30" height="30" /> Belinda Gomez</td></tr>
+			<tr><td><img src="img/default.png" width="30" height="30" /> Kaitlyn Hull</td></tr>
+			<tr><td><img src="img/default.png" width="30" height="30" /> Zion Strong</td></tr>
+			<tr><td><img src="img/default.png" width="30" height="30" /> Theodore Barron</td></tr>
+			<tr><td><img src="img/default.png" width="30" height="30" /> Kenley Jefferson</td></tr>
+			<tr><td><img src="img/default.png" width="30" height="30" /> Allen Nelson</td></tr>
+			<tr><td><img src="img/default.png" width="30" height="30" /> Jenna Beck</td></tr>
+			<tr><td><img src="img/default.png" width="30" height="30" /> Delaney Powers</td></tr>
+			<tr><td><img src="img/default.png" width="30" height="30" /> Camila Romero</td></tr>
+			<tr><td><img src="img/default.png" width="30" height="30" /> Sarah Williams</td></tr>
+			<tr><td><img src="img/default.png" width="30" height="30" /> Tristen Taylor</td></tr>
+			<tr><td><img src="img/default.png" width="30" height="30" /> Beckett Robinson</td></tr>
+			<tr><td><img src="img/default.png" width="30" height="30" /> Malia Ferrell</td></tr>
+			<tr><td><img src="img/default.png" width="30" height="30" /> Abdullah Mcconnell</td></tr>
+			<tr><td><img src="img/default.png" width="30" height="30" /> Trenton Santana</td></tr>
+			<tr><td><img src="img/default.png" width="30" height="30" /> Gregory Ford</td></tr>
+			<tr><td><img src="img/default.png" width="30" height="30" /> Bo Madden</td></tr>
+			<tr><td><img src="img/default.png" width="30" height="30" /> Marc Decker</td></tr>
+		</tbody>
+	</table>
+        </div>
+    </div>
+</div>

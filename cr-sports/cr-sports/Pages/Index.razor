@@ -1,4 +1,4 @@
-﻿@page "/"
+﻿@*@page "/"
 
 <PageTitle>Index</PageTitle>
 
@@ -6,4 +6,49 @@
 
 Welcome to your new app.
 
-<SurveyPrompt Title="How is Blazor working for you?" />
+<SurveyPrompt Title="How is Blazor working for you?" />*@
+
+
+@page "/"
+
+<PageTitle>Index</PageTitle>
+
+<h1>Upcoming Matches</h1>
+<br />
+<p>These are the upcoming matches from the sports you subscribed</p>
+<br />
+
+<table class="table table-striped" style="text-align: center;">
+    <thead>
+        <tr>
+            <th>Sport</th>
+            <th>Date</th>
+            <th>From</th>
+            <th>To</th>
+            <th>Attendance</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Volleyball</td>
+            <td>10/Feb/2022</td>
+            <td>19:00</td>
+            <td>21:00</td>
+            <td><span style="color:#009900" class="oi oi-circle-check"></span></td>
+        </tr>        
+        <tr>
+            <td>Basketball</td>
+            <td>11/Feb/2022</td>
+            <td>18:00</td>
+            <td>20:00</td>
+            <td><span style="color:#ff0000" class="oi oi-circle-x"></span></td>
+        </tr>
+        <tr>
+            <td>Football</td>
+            <td>15/Feb/2022</td>
+            <td>16:30</td>
+            <td>18:00</td>
+            <td><span style="color:#009900" class="oi oi-circle-check"></span></td>
+        </tr>
+    </tbody>
+</table>
